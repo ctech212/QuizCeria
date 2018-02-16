@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/abu"
+    tools:context="fahmi.moch.quizceria.LearnActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="@dimen/font_jwbn"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Negara-Negara di Dunia"/>
+
+
+
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:id="@+id/learntext"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/font_soal"
+                android:layout_marginLeft="@dimen/font_soal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/font_jwbn"
+                android:scrollbars="vertical"
+                android:text="@string/learn"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
